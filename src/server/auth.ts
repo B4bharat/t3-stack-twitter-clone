@@ -48,9 +48,17 @@ export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     DiscordProvider({
+      clientId: "1106222205852991558",
+      clientSecret: "VJXS2huu4cSpjcFKWIVoa7fPWaPO8nOt",
+    }),
+
+    /*
+    DiscordProvider({
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
     }),
+    */
+
     /**
      * ...add more providers here.
      *
